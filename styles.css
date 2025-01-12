@@ -105,6 +105,7 @@ html, body {
 					justify-content: space-between;
 					padding: 8px;
 					gap: 4px;
+					border-bottom: 1.5px solid var(--secondary);
 				}
 
 				.tasklistcontent {
@@ -118,7 +119,7 @@ html, body {
 						align-items: flex-start;
 						padding: 8px;
 						gap: 4px;
-						border-bottom: 1.5px solid var(--primary-transparent);
+						border-bottom: 1.5px solid var(--secondary);
 					}
 
 
