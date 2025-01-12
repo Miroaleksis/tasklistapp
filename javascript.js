@@ -130,7 +130,6 @@ function createTaskListFromData(data) {
 			const deleteTaskList = document.createElement('button');
 			deleteTaskList.className = 'delete';
 			deleteTaskList.textContent = 'Delete';
-			deleteTaskList.setAttribute('aria-live', 'polite');
 
 				// Deleting a task list
 				deleteTaskList.addEventListener('click', () => {
@@ -188,11 +187,11 @@ function createTaskListFromData(data) {
 						const deleteTask = document.createElement('button');
 						deleteTask.className = 'delete';
 						deleteTask.textContent = 'Delete';
-						deleteTask.setAttribute('aria-live', 'polite');
 					
 							// Deleting a task
 							deleteTask.addEventListener('click', () => {
 								deleteTask.textContent = 'Task deleted';
+								deleteTask.setAttribute('aria-live', 'polite');
 								setTimeout(() => {
 									task.parentElement.removeChild(task);
 									saveToLocalStorage(); // Saving
