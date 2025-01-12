@@ -39,7 +39,7 @@ function updateNoListsVisibility() {
     noLists.style.display = taskLists.querySelectorAll('.tasklistheader').length === 0 ? 'block' : 'none';
 }
 
-// Creating an unique name for a task list
+// Creating a unique name for a task list
 function makeUniqueName(baseName, currentElement) {
 	let currentName = baseName;
 	let existingTexts = Array.from(taskLists.querySelectorAll('.tasklistheader input'))
