@@ -133,7 +133,7 @@ function createTaskListFromData(data) {
 
 				// Deleting a task list
 				deleteTaskList.addEventListener('click', () => {
-					deleteTaskList.textContent = 'Tasklist deleted';
+					deleteTaskList.textContent = 'Task list deleted';
 					deleteTaskList.setAttribute('aria-live', 'polite');
 					setTimeout(() => {
 						taskLists.removeChild(taskList);
