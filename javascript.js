@@ -161,6 +161,7 @@ function createTaskListFromData(data) {
 						const status = document.createElement('button');
 						status.className = 'status';
 						status.setAttribute('aria-live', 'polite');
+						status.setAttribute('aria-description', 'Status');
 						const currentFilterState = filter.getAttribute('data-state');
 						const defaultState = currentFilterState === 'All tasks' ? 'To do' : currentFilterState;
 						status.textContent = defaultState;
