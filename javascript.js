@@ -88,7 +88,7 @@ function createTaskListFromData(data) {
 
 				// Allowing the name to only have letters (A-Z, a-z) and numbers (0-9)
 				name.addEventListener('input', (event) => {
-					const validInput = event.target.value.replace(/[^a-zA-Z0-9]/g, '');
+					const validInput = event.target.value.replace(/[^a-zA-Z0-9äöåÄÖÅ]/g, '');
 					event.target.value = validInput;
 				});
 				// Adding a name if none is added
