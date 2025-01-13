@@ -81,7 +81,7 @@ function createTaskListFromData(data) {
 
 			const name = document.createElement('input');
 			name.className = 'text';
-			name.setAttribute('placeholder', 'Type task list name (letters and numbers only)')
+			name.setAttribute('placeholder', 'Task list name (letters and numbers only)')
 			name.setAttribute('type', 'text');
 			name.setAttribute('maxlength', '60');
 			name.value = data.name;
