@@ -250,7 +250,15 @@ html, body {
 
 
 
-
+@media (max-width: 600px) { /* Responsiivisuus */
+	.delete {
+		font-size: 0;
+		gap: 0;
+	}
+		.delete:before {
+			font-size: 16px;
+		}
+}
 
 
 
