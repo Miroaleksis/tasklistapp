@@ -16,25 +16,24 @@ html, body {
 }
 
 :root {
-		--primary: #00596B;
-		--primary-transparent: rgb(0,89,107,0.2);
-		--secondary: #F9FFFF;
-		--tertiary: #E0F5F5;
+	--primary: #00596B;
+	--primary-transparent: rgb(0,89,107,0.2);
+	--secondary: #F9FFFF;
+}
+
+	h1, h2{
+		margin: 0;
+		font-family: "Leckerli One", serif;
+		font-weight: 400;
 	}
 
-		h1, h2{
-			margin: 0;
-			font-family: "Leckerli One", serif;
-			font-weight: 400;
-		}
+	h2 {
+		width: -webkit-fill-available;
+	}
 
-		h2 {
-			width: -webkit-fill-available;
-		}
-
-		::before,::after {
-			font-family: 'FontAwesome';
-		}
+	::before,::after {
+		font-family: 'FontAwesome';
+	}
 
 
 
@@ -92,7 +91,7 @@ html, body {
 			.tasklist {
 				display:flex;
 				flex-direction: column;
-				background-color: var(--tertiary);
+				background-color: #E0F5F5;
 				border-radius: 4px;
 				overflow: hidden;
 				margin-top: 8px;
