@@ -202,7 +202,7 @@ html, body {
 					}
 
 						.task .text:empty:before {
-							content: 'Type task description';
+							content: 'Task description';
 							font-family: inherit;
 							color: grey;
 						} 
