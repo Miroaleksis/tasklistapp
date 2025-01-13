@@ -231,7 +231,7 @@ html, body {
 			}
 
 				.filter[data-state="Doing"]:before, .status[data-state="Doing"]:before {
-					content: '\f0b1';
+					content: '\f017';
 				}
 			
 			.status[data-state="Done"]{
