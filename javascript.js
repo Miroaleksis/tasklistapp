@@ -147,7 +147,7 @@ function createTaskListFromData(data) {
 
 			const addTaskButton = document.createElement('button');
 			addTaskButton.className = 'addtask';
-			addTaskButton.textContent = 'Add new task';
+			addTaskButton.textContent = 'Add a new task';
 	
 	
 	
