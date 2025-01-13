@@ -19,6 +19,7 @@ html, body {
 	--primary: #00596B;
 	--primary-transparent: rgb(0,89,107,0.2);
 	--secondary: #F9FFFF;
+	--tertiary: #E0F5F5;
 }
 
 	h1, h2{
@@ -91,7 +92,7 @@ html, body {
 			.tasklist {
 				display:flex;
 				flex-direction: column;
-				background-color: #E0F5F5;
+				background-color: var(--tertiary);
 				border-radius: 4px;
 				overflow: hidden;
 				margin-top: 8px;
