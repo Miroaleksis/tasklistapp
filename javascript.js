@@ -83,6 +83,7 @@ function createTaskListFromData(data) {
 			name.className = 'text';
 			name.setAttribute('placeholder', 'Task list name (letters and numbers only)')
 			name.setAttribute('type', 'text');
+			name.setAttribute('aria-label', 'Task list name');
 			name.setAttribute('maxlength', '60');
 			name.value = data.name;
 
@@ -182,6 +183,7 @@ function createTaskListFromData(data) {
 						const taskDescription = document.createElement('div');
 						taskDescription.className = 'text';
 						taskDescription.contentEditable = true;
+						taskDescription.setAttribute('aria-description', 'Task description');
 						taskDescription.addEventListener('blur', saveToLocalStorage); // Saving
 
 						const deleteTask = document.createElement('button');
