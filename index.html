@@ -11,19 +11,18 @@
 	
 	
 <body>
-	
+	<header>
+		<div class="headerrow">
+			<h1>Task lists</h1>
+			<button class="filter" data-state="All tasks" aria-live="polite" aria-description="filter">All tasks</button>
+			<button id="createList">Create a task list</button>
+		</div>
+	</header>
 	<main>
 		<div class="content-field">
-			<h1>Task list App</h1>
 			<div id="taskLists">
-				<div class="headerrow">
-					<h2>Task lists</h2>
-					<span id="filter">Filter:</span>
-					<button class="filter" data-state="All tasks" aria-live="polite" aria-describedby="filter">All tasks</button>
-				</div>
 				<div id="noLists">You don't have task lists yet.</div>
 			</div>
-			<button id="createList">Create a task list</button>
 		</div>
 	</main>
 
