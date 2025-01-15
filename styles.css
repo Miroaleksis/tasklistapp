@@ -22,13 +22,11 @@ html, body {
 	--tertiary: #E0F5F5;
 }
 
-	h1, h2{
+	h1 {
 		margin: 0;
 		font-family: "Leckerli One", serif;
 		font-weight: 400;
-	}
-
-	h2 {
+		font-size: 20px;
 		width: -webkit-fill-available;
 	}
 
@@ -39,6 +37,28 @@ html, body {
 
 
 /* Main frames */
+
+	header {
+		display:  flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		justify-content: center;
+		background-color: var(--primary);
+	}
+
+		.headerrow {
+			display: flex;
+			justify-content: space-between;
+			width: -webkit-fill-available;
+			align-items: center;
+			background-color: var(--primary);
+			color: var(--secondary);
+			gap: 4px;
+			max-width: 800px;
+			padding: 8px;
+		}
 
 	main {
 		display: flex;
@@ -54,18 +74,6 @@ html, body {
 			width: -webkit-fill-available;
 			margin: 40px 0;
 		}
-
-			.headerrow {
-				display: flex;
-				justify-content: space-between;
-				width: -webkit-fill-available;
-				align-items: center;
-				background-color: var(--primary);
-				color: var(--secondary);
-				padding: 8px 8px 8px 16px;
-				border-radius: 4px;
-				gap: 4px;
-			}
 
 			#noLists {
 				padding: 8px;
@@ -153,6 +161,11 @@ html, body {
 					background-color: #84FFBC;
 				}
 
+					#createList:hover {
+						color: #84FFBC;
+						background: none;
+					}
+
 					#createList::before, .addtask::before {
 						content: '\f067';
 					}
@@ -222,7 +235,7 @@ html, body {
 				color: darkred;
 			}
 
-				.filter[data-state="To do"]:before, .status[data-state="To do"]:before {
+				.status[data-state="To do"]:before {
 					content: '\f0f3';
 				}
 
@@ -230,7 +243,7 @@ html, body {
 				color: darkblue;
 			}
 
-				.filter[data-state="Doing"]:before, .status[data-state="Doing"]:before {
+				.status[data-state="Doing"]:before {
 					content: '\f017';
 				}
 			
@@ -238,12 +251,12 @@ html, body {
 				color: darkgreen;
 			}
 
-				.filter[data-state="Done"]:before, .status[data-state="Done"]:before {
+				.status[data-state="Done"]:before {
 					content: '\f00c';
 				}
 
-			.filter[data-state="All tasks"]:before {
-				content: '\f06e';
+			.filter:before {
+				content: '\f0b0';
 			}
 
 
